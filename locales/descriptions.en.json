@@ -1,0 +1,21 @@
+{
+  "solo-help": "Show the full Solo Squad command catalog (all /solo-*) with short when-to-use hints. Use with /solo-help or when you forget a command.",
+  "solo-status": "Check which Solo Squad skills are still active in this chat. Use with /solo-status.",
+  "solo-modernize": "Modernize a legacy app: stack audit, dependencies, migration strategy (strangler/incremental), risk register. Phase 0 before scout. Use with /solo-modernize.",
+  "solo-scout": "Problem analysis + integrated grill-me-product. Interview assumptions, scope, edge cases, stack recommendations. Use with /solo-scout — no separate skill needed.",
+  "solo-add-feature": "Add a feature to an existing app — orchestrates scout→blueprint→build→test→ship. Vertical slices, follow existing patterns. Use with /solo-add-feature.",
+  "solo-blueprint": "Planning + integrated grill-me-architecture. Phases, tasks, Mermaid diagrams required. Use with /solo-blueprint — no separate architecture skill needed.",
+  "solo-backend": "Backend implementer + integrated Engineering Best Practices. One command: Laravel/API, DB, auth, OWASP. Use with /solo-backend — no separate skill needed.",
+  "solo-frontend": "Frontend implementer + integrated Taste Skill. One command: project structure, API wiring, anti-slop UI. Use with /solo-frontend — no separate design skill needed.",
+  "solo-test": "Testing + integrated Test-Driven Development. Strategy, write tests, run, report results. Red-green-refactor, test pyramid. Use with /solo-test.",
+  "solo-review": "Multi-axis code quality review (correctness, readability, architecture, security, performance). One command before merge. Use with /solo-review.",
+  "solo-security": "Security audit & hardening (legacy or new apps). STRIDE threat model, OWASP, boundary checklist. One command for existing apps. Use with /solo-security.",
+  "solo-pentest": "Controlled web pentest on staging/localhost (OWASP WSTG). Grey/black-box, pairs with solo-security. Use with /solo-pentest — requires scope & authorization.",
+  "solo-dependabot": "Check GitHub Dependabot alerts (repo or org) via gh API, triage severity, cross-check local npm/composer audit. Use with /solo-dependabot.",
+  "solo-ship": "Release + integrated Shipping and Launch. Semver, changelog, GitHub tag, production deploy checklist. Human-in-the-loop. Use with /solo-ship.",
+  "solo-docs": "Documentation + integrated Documentation and ADRs. System docs, user guides, ADRs. All diagrams must be Mermaid. Modes: system, user, both. Use with /solo-docs.",
+  "solo-ponytail": "Enable lazy senior dev mode (full). Simplest solution that actually works — YAGNI, stdlib first, native platform. Use with /solo-ponytail.",
+  "solo-ponytail-ultra": "Ponytail ultra mode — extreme YAGNI. Challenge requirements, delete before adding. Use with /solo-ponytail-ultra.",
+  "solo-ponytail-review": "Code review focused on over-engineering. Find what can be removed. Use with /solo-ponytail-review.",
+  "solo-ponytail-status": "Check if Ponytail mode is active in this chat. Short answer: YES or NO. Use with /solo-ponytail-status."
+}

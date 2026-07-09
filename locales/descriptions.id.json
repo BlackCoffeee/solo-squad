@@ -1,0 +1,21 @@
+{
+  "solo-help": "Tampilkan daftar lengkap command Solo Squad (semua /solo-*) beserta penjelasan singkat kapan dipakai. Pakai saat /solo-help atau lupa command apa.",
+  "solo-status": "Cek skill Solo Squad mana yang masih aktif di chat ini. Pakai saat /solo-status.",
+  "solo-modernize": "Modernisasi aplikasi warisan: audit stack, dependency, strategi migrasi (strangler/incremental), risk register. Fase 0 sebelum scout. Pakai saat /solo-modernize.",
+  "solo-scout": "Analisis masalah + grill-me-product terintegrasi. Wawancara asumsi, scope, edge case, rekomendasi stack. Pakai saat /solo-scout — tidak perlu skill terpisah.",
+  "solo-add-feature": "Menambah fitur ke app yang sudah jalan — orkestrasi scout→blueprint→build→test→ship. Vertical slice, patuhi pola existing. Pakai saat /solo-add-feature.",
+  "solo-blueprint": "Perencanaan + grill-me-architecture terintegrasi. Fase, task, diagram Mermaid wajib. Pakai saat /solo-blueprint — tidak perlu skill arsitektur terpisah.",
+  "solo-backend": "Backend implementer + Engineering Best Practices terintegrasi. Satu perintah: Laravel/API, DB, auth, OWASP. Pakai saat /solo-backend — tidak perlu skill terpisah.",
+  "solo-frontend": "Frontend implementer + Taste Skill terintegrasi. Satu perintah: struktur project, API wiring, dan anti-slop UI. Pakai saat /solo-frontend — tidak perlu /design-taste-frontend terpisah.",
+  "solo-test": "Testing + Test-Driven Development terintegrasi. Strategi, tulis test, jalankan, laporkan hasil. Red-green-refactor, test pyramid. Pakai saat /solo-test.",
+  "solo-review": "Review kualitas kode multi-axis (correctness, readability, architecture, security, performance). Satu perintah sebelum merge. Pakai saat /solo-review.",
+  "solo-security": "Audit & hardening keamanan aplikasi (warisan atau baru). Threat model STRIDE, OWASP, checklist boundary. Satu perintah untuk cek app yang sudah jadi. Pakai saat /solo-security.",
+  "solo-pentest": "Pentest web terkontrol pada staging/localhost (OWASP WSTG). Grey/black-box, pair dengan solo-security. Pakai saat /solo-pentest — butuh scope & otorisasi.",
+  "solo-dependabot": "Cek alert Dependabot di GitHub (repo atau org) via gh API, triage severity, cross-check npm/composer audit lokal. Pakai saat /solo-dependabot.",
+  "solo-ship": "Release + Shipping and Launch terintegrasi. Semver, changelog, GitHub tag, checklist deploy production. Human-in-the-loop. Pakai saat /solo-ship.",
+  "solo-docs": "Dokumentasi + Documentation and ADRs terintegrasi. Dok sistem, panduan user, ADR. Semua diagram wajib Mermaid. Mode system, user, both. Pakai saat /solo-docs.",
+  "solo-ponytail": "Aktifkan lazy senior dev mode (full). Solusi paling sederhana yang benar-benar bekerja — YAGNI, stdlib first, native platform. Pakai saat /solo-ponytail.",
+  "solo-ponytail-ultra": "Ponytail mode ultra — YAGNI ekstrem. Tantang requirement, hapus sebelum tambah. Pakai saat /solo-ponytail-ultra.",
+  "solo-ponytail-review": "Review kode fokus over-engineering. Temukan yang bisa dihapus. Pakai saat /solo-ponytail-review.",
+  "solo-ponytail-status": "Cek apakah mode Ponytail aktif di chat ini. Jawaban singkat: YA atau TIDAK. Pakai saat /solo-ponytail-status."
+}
