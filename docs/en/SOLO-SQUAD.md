@@ -4,7 +4,7 @@
 
 A virtual team you call when you need it — for full-stack solo workflows. All commands are **`/solo-*`**, including **`/solo-ponytail`** so you don't over-build while coding.
 
-**Setup:** 2026-07-09 · **Version:** [1.0.0](../../CHANGELOG.md) · [Release notes](../../RELEASE-NOTES.md)  
+**Setup:** 2026-07-13 · **Version:** [2.0.0](../../CHANGELOG.md) · [Release notes](../../RELEASE-NOTES.md)  
 **Install from GitHub:**
 
 ```bash
@@ -14,8 +14,8 @@ cd solo-squad && chmod +x scripts/*.sh && ./scripts/install.sh --lang en
 
 Restart Cursor → `/solo-help`. Details: [README.md](./README.md) · Attribution: [ATTRIBUTION.md](../../ATTRIBUTION.md)
 
-**Skill location (after install):** `~/.cursor/skills/`  
-**Security:** All skills use `disable-model-invocation: true` — active only when you invoke `/skill-name`.
+**Skill location (after install):** `~/.cursor/skills/` (Cursor) · `~/.gemini/config/skills/` (Antigravity — see [PLATFORMS.md](../../PLATFORMS.md))  
+**Security:** All skills use `disable-model-invocation: true` — active only when you invoke `/skill-name` (on Antigravity prefer explicit slash commands).
 
 **Forgot a command?** Type **`/solo-help`** — shows every Solo Squad command with explanations.
 
@@ -129,15 +129,15 @@ Or clone + install directly in **Git Bash** so paths match Cursor on Windows.
 ### Install options (all platforms)
 
 ```bash
-./scripts/install.sh                  # language prompt (id/en) when interactive
-./scripts/install.sh --lang id        # Indonesian skill descriptions
-./scripts/install.sh --lang en        # English descriptions
-./scripts/install.sh --dry-run        # preview without writing files
-SOLO_LANG=en ./scripts/install.sh     # via environment variable
+./scripts/install.sh --lang en                         # Cursor (default)
+./scripts/install.sh --platform antigravity --lang en  # Antigravity
+./scripts/install.sh --lang id
+./scripts/install.sh --dry-run
+SOLO_LANG=en ./scripts/install.sh
 SOLO_SKILLS_DIR=/custom/path ./scripts/install.sh
 ```
 
-Language is stored in `~/.cursor/skills/.solo-squad-lang`.
+Language is stored in `.solo-squad-lang` on the platform path. Antigravity details: [PLATFORMS.md](../../PLATFORMS.md).
 
 ### Verify after install
 

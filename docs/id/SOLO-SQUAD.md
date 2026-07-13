@@ -4,7 +4,7 @@
 
 Tim virtual yang dipanggil saat perlu, untuk workflow full-stack solo. Semua command **`/solo-*`** — termasuk **`/solo-ponytail`** supaya coding tidak membengkak.
 
-**Setup:** 2026-07-09 · **Versi:** [1.0.0](../../CHANGELOG.md) · [Release notes](../../RELEASE-NOTES.md)  
+**Setup:** 2026-07-13 · **Versi:** [2.0.0](../../CHANGELOG.md) · [Release notes](../../RELEASE-NOTES.md)  
 **Install dari GitHub:**
 
 ```bash
@@ -14,8 +14,8 @@ cd solo-squad && chmod +x scripts/*.sh && ./scripts/install.sh --lang id
 
 Restart Cursor → `/solo-help`. Detail: [README.md](./README.md) · Atribusi: [ATTRIBUTION.md](../../ATTRIBUTION.md)
 
-**Lokasi skill (setelah install):** `~/.cursor/skills/`  
-**Keamanan:** Semua skill memakai `disable-model-invocation: true` — aktif hanya saat Anda memanggil `/nama-skill`.
+**Lokasi skill (setelah install):** `~/.cursor/skills/` (Cursor) · `~/.gemini/config/skills/` (Antigravity — lihat [PLATFORMS.md](../../PLATFORMS.md))  
+**Keamanan:** Semua skill memakai `disable-model-invocation: true` — aktif hanya saat Anda memanggil `/nama-skill` (di Antigravity prefer slash command eksplisit).
 
 **Lupa command?** Ketik **`/solo-help`** — menampilkan seluruh perintah Solo Squad beserta penjelasan.
 
@@ -129,15 +129,15 @@ Atau clone + install langsung di **Git Bash** agar path selaras dengan Cursor Wi
 ### Opsi install (semua platform)
 
 ```bash
-./scripts/install.sh                  # prompt bahasa (id/en) jika interaktif
-./scripts/install.sh --lang id        # deskripsi skill Bahasa Indonesia
-./scripts/install.sh --lang en        # English descriptions
-./scripts/install.sh --dry-run        # preview tanpa menulis file
-SOLO_LANG=en ./scripts/install.sh     # via environment variable
+./scripts/install.sh --lang id                         # Cursor (default)
+./scripts/install.sh --platform antigravity --lang id  # Antigravity
+./scripts/install.sh --lang en
+./scripts/install.sh --dry-run
+SOLO_LANG=en ./scripts/install.sh
 SOLO_SKILLS_DIR=/custom/path ./scripts/install.sh
 ```
 
-Bahasa tersimpan di `~/.cursor/skills/.solo-squad-lang`.
+Bahasa tersimpan di `.solo-squad-lang` pada path platform. Detail Antigravity: [PLATFORMS.md](../../PLATFORMS.md).
 
 ### Verifikasi setelah install
 

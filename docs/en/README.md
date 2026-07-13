@@ -9,9 +9,9 @@ A **virtual team** you call when you need it — for solo full-stack developers 
 **Language:** English · [Bahasa Indonesia](../id/README.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../../LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](../../CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.0.0-green.svg)](../../CHANGELOG.md)
 
-**Author:** [BlackCoffeee](https://github.com/BlackCoffeee) · **Release:** [v1.0.0](../../RELEASE-NOTES.md)
+**Author:** [BlackCoffeee](https://github.com/BlackCoffeee) · **Release:** [v2.0.0](../../RELEASE-NOTES.md)
 
 ---
 
@@ -74,7 +74,7 @@ solo-squad/
 │   └── descriptions.en.json
 ├── skills/
 └── scripts/
-    ├── install.sh         # → ~/.cursor/skills/ + --lang
+    ├── install.sh         # --platform cursor|antigravity + --lang
     ├── apply-locale.py
     └── …
 ```
@@ -84,15 +84,14 @@ solo-squad/
 ## Install options
 
 ```bash
-./scripts/install.sh                  # asks for language (id/en)
-./scripts/install.sh --lang en        # English descriptions
-./scripts/install.sh --lang id        # Indonesian descriptions
+./scripts/install.sh --lang en                         # Cursor (default)
+./scripts/install.sh --platform antigravity --lang en  # Antigravity
 ./scripts/install.sh --dry-run
 SOLO_LANG=id ./scripts/install.sh
 SOLO_SKILLS_DIR=/custom/path ./scripts/install.sh
 ```
 
-After install, the language choice is saved in `~/.cursor/skills/.solo-squad-lang`.
+After install, the language choice is saved in `.solo-squad-lang` on the platform path (see [PLATFORMS.md](../../PLATFORMS.md)).
 
 ---
 
@@ -125,8 +124,9 @@ Community references we ship: see [ATTRIBUTION.md](../../ATTRIBUTION.md).
 
 | Platform | Status |
 |----------|--------|
-| Cursor | ✅ |
-| Antigravity, VS Code, Gemini CLI | 🔜 [PLATFORMS.md](../../PLATFORMS.md) |
+| Cursor | ✅ `~/.cursor/skills/` |
+| Antigravity | ✅ `~/.gemini/config/skills/` — [PLATFORMS.md](../../PLATFORMS.md) |
+| VS Code, Gemini CLI, Claude Code | 🔜 [PLATFORMS.md](../../PLATFORMS.md) |
 
 ---
 

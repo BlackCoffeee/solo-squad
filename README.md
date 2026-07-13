@@ -7,9 +7,9 @@
 **Bahasa Indonesia** · **English**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](./CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.0.0-green.svg)](./CHANGELOG.md)
 
-**Author:** [BlackCoffeee](https://github.com/BlackCoffeee) · **Release:** [v1.0.0](./RELEASE-NOTES.md)
+**Author:** [BlackCoffeee](https://github.com/BlackCoffeee) · **Release:** [v2.0.0](./RELEASE-NOTES.md)
 
 ---
 
@@ -65,14 +65,15 @@ Here's all it takes:
 git clone https://github.com/BlackCoffeee/solo-squad.git
 cd solo-squad
 chmod +x scripts/*.sh
-./scripts/install.sh              # prompts: id or en
+./scripts/install.sh              # Cursor (default); prompts: id or en
 ./scripts/install.sh --lang id    # Indonesian skill descriptions
 ./scripts/install.sh --lang en    # English skill descriptions
+./scripts/install.sh --platform antigravity --lang id  # Antigravity
 ```
 
-Restart Cursor → **`/solo-help`**
+Restart Cursor → **`/solo-help`** (Antigravity: restart AGY / `agy` → `/solo-help`)
 
-**Installing on macOS, Linux, or Windows:** [Indonesia](./docs/id/SOLO-SQUAD.md#cara-install-di-macos-linux-dan-windows) · [English](./docs/en/SOLO-SQUAD.md#installing-on-macos-linux-and-windows)
+**Installing on macOS, Linux, or Windows:** [Indonesia](./docs/id/SOLO-SQUAD.md#cara-install-di-macos-linux-dan-windows) · [English](./docs/en/SOLO-SQUAD.md#installing-on-macos-linux-and-windows) · [Platforms](./PLATFORMS.md)
 
 Skill descriptions follow the language you pick at install. The skill instructions themselves stay in English — that's normal for Cursor agents.
 
@@ -98,9 +99,9 @@ Full catalog: **`/solo-help`** · deep dive: [SOLO-SQUAD.md](./docs/en/SOLO-SQUA
 ## Other links
 
 - [CHANGELOG.md](./CHANGELOG.md) — version history
-- [RELEASE-NOTES.md](./RELEASE-NOTES.md) — v1.0.0 release notes
+- [RELEASE-NOTES.md](./RELEASE-NOTES.md) — v2.0.0 release notes
 - [ATTRIBUTION.md](./ATTRIBUTION.md) — upstream credits (Addy Osmani, sergdort, DietrichGebert/ponytail, …)
-- [PLATFORMS.md](./PLATFORMS.md) — Cursor today; more platforms planned
+- [PLATFORMS.md](./PLATFORMS.md) — Cursor + Antigravity install paths
 - [LICENSE](./LICENSE) — MIT. The shortest license that works.
 
 ---
